@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather is sweet yeah!</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div id="menu" class="col-auto px-0 menu">
+          <div
+            id="sidebar"
+            class="collapse collapse-horizontal show border-end"
+          >
+            <div
+              id="sidebar-nav"
+              class="list-group border-0 rounded-0 text-sm-start min-vh-100"
+            >
+              <a id="btnHome" href="index.html" class="nav-link text-truncate">
+                <i class="fs-5 bi-house"></i
+                ><span class="ms-1 d-none d-sm-inline">Inicio</span>
+              </a>
+              <a
+                href="#"
+                id="btnSearch"
+                data-bs-toggle="collapse"
+                class="nav-link text-truncate"
+              >
+                <i class="fs-5 bi bi-search"></i
+                ><span class="ms-1 d-none d-sm-inline">Buscar</span>
+              </a>
+              <a
+                href="#"
+                id="btnLocation"
+                data-bs-toggle="collapse"
+                class="nav-link text-truncate"
+              >
+                <i class="fs-5 bi bi-geo-alt"></i
+                ><span class="ms-1 d-none d-sm-inline">Ubicación</span>
+              </a>
+              <a
+                href="index.html"
+                id="btnLocation"
+                class="nav-link text-truncate"
+              >
+                <img id="flag" src="img/uk.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <main class="col ps-md-2 pt-2">
+          <a
+            id="btnMostrarMenu"
+            href="#"
+            data-bs-target="#sidebar"
+            data-bs-toggle="collapse"
+            class="btn float-end"
+            ><i class="bi bi-arrow-right-square-fill fs-3"></i
+          ></a>
+          <div class="container container-fluid">
+            <div class="jumbotron jumbotron-fluid">
+              <h1 class="display-4">Weather is Sweet Yeah!</h1>
+              <p class="lead">
+                Bienvenido a la mejor web de metereología de internet, siéntete
+                libre y busca cualquier localización o ciudad que gustes.
+                <br />
+                ¡Gracias por usar nuestro servicio y disfruta!
+              </p>
+              <hr />
+              <div id="bodyCard" class="card">
+                <div class="card-header">¡IMPORTANTE!</div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Por favor lee esto antes de usar nuestro servicio
+                  </h5>
+                  <p class="card-text lead">
+                    En esta app del tiempo podrás mirar el tiempo o el clima en
+                    tu ciudad, selecionando la localización o escribiendo esta a
+                    mano.
+                    <br />
+                    El uso es simple, si el menú no está visible despliégalo
+                    pinchando en la flecha situada en lo alto de la parte
+                    derecha de la página.
+                    <br />
+                    El menú se desplegará, entonces elige la acción que desees.
+                    <br />
+                    ¿Muy sencillo verdad?
+                  </p>
+                </div>
+                <div id="hidden" class="card-footer">
+                  WeatherIsSweetYeah.com
+                </div>
+              </div>
+            </div>
+            <div id="sectionSearch" class="jumbotron jumbotron-fluid">
+              <h1 class="display-5">Busca por ciudad</h1>
+              <form class="form-inline">
+                <label for="city" class="form-label lead">Ciudad</label>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cityInput"
+                    aria-describedby="cityHelp"
+                    placeholder="Escribe aquí el nombre de la ciudad que deseas buscar."
+                  />
+                  <br />
+                  <input
+                    id="btnCity"
+                    type="button"
+                    value="Button"
+                    class="btn btn-dark float-end"
+                  />
+                </div>
+              </form>
+              <br />
+              <br />
+            </div>
+          </div>
+          <div id="resultado"></div>
+          <br />
+          <br />
+          <!-- 
+          <div id="resultado" class="card">
+            <div class="row g-0">
+              <div class="col-5 col-sm-4">
+                <img id="img" src="" class="img-fluid w-100" alt="" />
+              </div>
+              <div class="col-7 col-sm-8">
+                <div class="card-body">
+                  <h5 id="status" class="card-title"></h5>
+                  <p id="nextDays" class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+        </main>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

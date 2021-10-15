@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather is sweet yeah!</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div id="menu" class="col-auto px-0 menu">
+          <div
+            id="sidebar"
+            class="collapse collapse-horizontal show border-end"
+          >
+            <div
+              id="sidebar-nav"
+              class="list-group border-0 rounded-0 text-sm-start min-vh-100"
+            >
+              <a id="btnHome" href="index.html" class="nav-link text-truncate">
+                <i class="fs-5 bi-house"></i
+                ><span class="ms-1 d-none d-sm-inline">Home</span>
+              </a>
+              <a
+                href="#"
+                id="btnSearch"
+                data-bs-toggle="collapse"
+                class="nav-link text-truncate"
+              >
+                <i class="fs-5 bi bi-search"></i
+                ><span class="ms-1 d-none d-sm-inline">Search</span>
+              </a>
+              <a
+                href="#"
+                id="btnLocation"
+                data-bs-toggle="collapse"
+                class="nav-link text-truncate"
+              >
+                <i class="fs-5 bi bi-geo-alt"></i
+                ><span class="ms-1 d-none d-sm-inline">Location</span>
+              </a>
+              <a
+                href="indexEsp.html"
+                id="btnLocation"
+                class="nav-link text-truncate"
+              >
+                <img id="flag" src="img/esp.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <main class="col ps-md-2 pt-2">
+          <a
+            id="btnMostrarMenu"
+            href="#"
+            data-bs-target="#sidebar"
+            data-bs-toggle="collapse"
+            class="btn float-end"
+            ><i class="bi bi-arrow-right-square-fill fs-3"></i
+          ></a>
+          <div class="container container-fluid">
+            <div class="jumbotron jumbotron-fluid">
+              <h1 class="display-4">Weather is Sweet Yeah!</h1>
+              <p class="lead">
+                Welcome to the best weather forecast web page in the internet,
+                feel free to check any location or city and have fun!
+                <br />
+                Thanks for using our service.
+              </p>
+              <hr />
+              <div id="bodyCard" class="card">
+                <div class="card-header">IMPORTANT!</div>
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Read this before using this website
+                  </h5>
+                  <p class="card-text lead">
+                    In this weather web you will be able to take a look at the
+                    weather o climate in your city by choosing a location or
+                    writing a city.
+                    <br />
+                    The using is simple, if the menu is not visible click on the
+                    the arrow it the top right corner of the main page.
+                    <br />
+                    The menu will be displayed, then select your action.
+                    <br />
+                    Very simple right?
+                  </p>
+                </div>
+                <div id="hidden" class="card-footer">
+                  WeatherIsSweetYeah.com
+                </div>
+              </div>
+            </div>
+            <div id="sectionSearch" class="jumbotron jumbotron-fluid">
+              <h1 class="display-5">Search by city</h1>
+              <form class="form-inline">
+                <label for="city" class="form-label lead">City</label>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cityInput"
+                    aria-describedby="cityHelp"
+                    placeholder="Write here the name of the city you want to search."
+                  />
+                  <br />
+                  <input
+                    id="btnCity"
+                    type="button"
+                    value="Button"
+                    class="btn btn-dark float-end"
+                  />
+                </div>
+              </form>
+              <br />
+              <br />
+            </div>
+          </div>
+          <div id="resultado"></div>
+          <br />
+          <br />
+          <!-- 
+            <div id="resultado" class="card">
+            <div class="row g-0">
+              <div class="col-5 col-sm-4">
+                <img id="img" src="" class="img-fluid w-100" alt="" />
+              </div>
+              <div class="col-7 col-sm-8">
+                <div class="card-body">
+                  <h5 id="status" class="card-title"></h5>
+                  <p id="nextDays" class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+           -->
+        </main>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

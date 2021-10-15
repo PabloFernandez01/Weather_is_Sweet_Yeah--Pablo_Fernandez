@@ -1,0 +1,43 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+a {
+  color: $text-color !important;
+  &:hover {
+    color: $btn !important;
+  }
+}
+
+body {
+  background-color: $primary !important;
+}
+
+#menu {
+  background-color: $background-color !important;
+  padding-top: $padding-y !important;
+}
+
+#hidden {
+  color: $hidden-text !important;
+}
+
+#btnCity:hover {
+  background-color: $btn;
+  border-color: $btn;
+}
+
+#flag {
+  width: $widht;
+  height: $height;
+}
+
+#resultado {
+  width: 1110px;
+  height: 110px;
+}
+
+#img {
+  margin-top: -50px;
+  width: 10px;
+  height: 200px;
+}

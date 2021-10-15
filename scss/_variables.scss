@@ -1,0 +1,22 @@
+$dark-blue: #0288d1;
+$blue: #03a9f4;
+$clear-blue: #b3e5fc;
+$electric-blue: #0275d8;
+$dark: #212121;
+$grey: #757575;
+$white: whitesmoke;
+
+$primary: $clear-blue;
+$secondary: $dark-blue;
+$accent: $blue;
+$btn: $electric-blue;
+$text-color: $dark;
+$hidden-text: lighten($grey, 10%);
+$background-color: $white;
+
+$padding-x: 11.5rem;
+
+$padding-y: $padding-x * 1.25;
+
+$height: 50px;
+$widht: 100px;

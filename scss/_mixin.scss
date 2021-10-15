@@ -1,0 +1,10 @@
+@import "variables.scss";
+
+@mixin gradient-bg($color1: $primary, $color2: $secondary, $color3: $accent) {
+  background-color: $color1;
+  @if $color3 != null {
+    background: linear-gradient(90deg, $color1 0%, $color2 35%, $color3 10 0%);
+  } @else if $color3 == null {
+    background: linear-gradient(90deg, $color1 0%, $color2 100%);
+  }
+}

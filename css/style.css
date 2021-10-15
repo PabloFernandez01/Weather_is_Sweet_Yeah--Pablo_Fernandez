@@ -1,0 +1,31 @@
+a {
+  color: #212121 !important; }
+  a:hover {
+    color: #0275d8 !important; }
+
+body {
+  background-color: #b3e5fc !important; }
+
+#menu {
+  background-color: whitesmoke !important;
+  padding-top: 14.375rem !important; }
+
+#hidden {
+  color: #8f8f8f !important; }
+
+#btnCity:hover {
+  background-color: #0275d8;
+  border-color: #0275d8; }
+
+#flag {
+  width: 100px;
+  height: 50px; }
+
+#resultado {
+  width: 1110px;
+  height: 110px; }
+
+#img {
+  margin-top: -50px;
+  width: 10px;
+  height: 200px; }
