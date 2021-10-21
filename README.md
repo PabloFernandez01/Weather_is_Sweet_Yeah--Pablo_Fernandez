@@ -21,10 +21,12 @@ quisiese, sin importar los colores, la tipografía, los márgenes, etc. Eso sí,
 Los diferentes botones esparcidos por la web permiten al usuario un cómodo e intuitivo desplazamiento por la misma además de ejecutar sus funciones.
 Los botones de secciones permiten ocultar y desocultar estas, haciendo que un gran código no se vea y la web parezca más limpia y ordenada.
 
-Por otro lado, el boton de búsqueda de una ciudad, ejecuta dos funciones:
+Estas son las diferentes funcionalidades que implementa mi página:
   - Mostrar el clima en forma de descripción y un icono de esta.
   - Mostrar el clima en forma de descripción, un icono de la misma y en que día de la semana será (Los días posteriores a hoy, que es el día que se busca)
-  - Mostrar todo lo anterior, pero solicitando la ubicación al usuario. Si este acepta, la mostrará.
-  
-Para poder realizar todas estas consultas hemos tenido que utilizar una API y su respectivo "token" de activación. Gracias a las propiedades que incluye somos capaces de recorrer 
+    + Para poder realizar todas estas consultas hemos tenido que utilizar una API y su respectivo "token" de activación. Gracias a las propiedades que incluye somos capaces  de recorrer 
 y seleccionar aquellos parámetros necesarios y mostrarlos por pantalla en nuestra web.
+  - Mostar el clima actual del lugar en el que te encuentras a través de la solicitud de tu ubicación.
+    + Para poder realizar esta funcionalidad hemos utilizado "Cordova", añadiendo modulos de node y llamadas a diferentes APK. La principal APK utilizada ha sido la de la  geolocalización suministrada por el propio cordova donde utilizando la API de "OpenWeatherMap", nuestro token y los parámetros de latitud y longitud hemos conseguido que esta funcione y nos pregunte si aceptemos o no los permisos. Si la respuesta fuera positiva, se genera una card con el nombre de la ciudad, el icono y el clima actual de la misma en el mismo lugar donde nos aparecía se hacemos la búsqueda. 
+  
+
